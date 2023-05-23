@@ -1,0 +1,32 @@
+May 23 05:42:28.844 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+May 23 05:42:28.844 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 41773.
+May 23 05:42:28.852 HYPERVISOR: exec_cmd: hypervisor version 
+May 23 05:42:28.853 HYPERVISOR: exec_cmd: hypervisor working_dir /home/schnippen/GNS3/projects/ruteo-dinamico_topologia/project-files/dynamips 
+May 23 05:42:28.853 GENERAL: working_dir=/home/schnippen/GNS3/projects/ruteo-dinamico_topologia/project-files/dynamips
+May 23 05:42:28.853 HYPERVISOR: exec_cmd: hypervisor working_dir /home/schnippen/GNS3/projects/ruteo-dinamico_topologia/project-files/dynamips/37b25c02-e203-4a86-af1e-8581b77fd7de 
+May 23 05:42:28.853 GENERAL: working_dir=/home/schnippen/GNS3/projects/ruteo-dinamico_topologia/project-files/dynamips/37b25c02-e203-4a86-af1e-8581b77fd7de
+May 23 05:42:28.853 HYPERVISOR: exec_cmd: vm create R5 5 c3600 
+May 23 05:42:28.853 VM: VM R5 created.
+May 23 05:42:28.854 HYPERVISOR: exec_cmd: vm set_con_tcp_port R5 5014 
+May 23 05:42:28.854 HYPERVISOR: exec_cmd: c3600 get_mac_addr R5 
+May 23 05:42:28.854 HYPERVISOR: exec_cmd: vm get_status R5 
+May 23 05:42:28.856 HYPERVISOR: exec_cmd: vm set_idle_pc R5 0x60440480 
+May 23 05:42:28.857 HYPERVISOR: exec_cmd: vm set_ios R5 /home/schnippen/GNS3/images/c3640-i-mz.122-12c.image 
+May 23 05:42:28.857 HYPERVISOR: exec_cmd: c3600 set_mac_addr R5 cc05.2a1f.0000 
+May 23 05:42:28.857 HYPERVISOR: exec_cmd: vm set_nvram R5 256 
+May 23 05:42:28.858 HYPERVISOR: exec_cmd: vm set_ram R5 192 
+May 23 05:42:28.858 HYPERVISOR: exec_cmd: vm get_status R5 
+May 23 05:42:28.858 HYPERVISOR: exec_cmd: vm slot_add_binding R5 0 0 NM-1FE-TX 
+May 23 05:42:28.859 HYPERVISOR: exec_cmd: vm get_status R5 
+May 23 05:42:28.859 HYPERVISOR: exec_cmd: vm slot_add_binding R5 1 0 NM-4T 
+May 23 05:42:28.859 HYPERVISOR: exec_cmd: vm get_status R5 
+May 23 05:42:28.859 HYPERVISOR: exec_cmd: vm slot_add_binding R5 2 0 NM-1FE-TX 
+May 23 05:42:29.973 HYPERVISOR: exec_cmd: nio create_udp udp-214c3451-8418-4071-ac91-898705dd0dd0 10014 127.0.0.1 10015 
+May 23 05:42:30.181 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 0 udp-214c3451-8418-4071-ac91-898705dd0dd0 
+May 23 05:42:30.182 HYPERVISOR: exec_cmd: vm get_status R5 
+May 23 05:42:30.804 HYPERVISOR: exec_cmd: nio create_udp udp-5b5de954-0ccc-498b-8719-33bf22cdd30c 10042 127.0.0.1 10043 
+May 23 05:42:30.805 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 1 1 udp-5b5de954-0ccc-498b-8719-33bf22cdd30c 
+May 23 05:42:30.806 HYPERVISOR: exec_cmd: vm get_status R5 
+May 23 05:42:30.862 HYPERVISOR: exec_cmd: nio create_udp udp-b3e75979-9b7c-423d-81a6-8cf49e0bffd4 10046 127.0.0.1 10047 
+May 23 05:42:30.863 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 1 0 udp-b3e75979-9b7c-423d-81a6-8cf49e0bffd4 
+May 23 05:42:30.863 HYPERVISOR: exec_cmd: vm get_status R5 
